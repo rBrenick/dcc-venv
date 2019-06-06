@@ -1,6 +1,5 @@
 
 @ECHO OFF
-echo MOBU INSTALL THINGS
 
 FOR /D %%G in ("%UserProfile%\Documents\MB\*") do (
     call :SETUP_MOBU_STARTUP %%~nxG
