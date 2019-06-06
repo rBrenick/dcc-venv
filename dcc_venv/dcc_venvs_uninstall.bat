@@ -20,7 +20,7 @@ if %INSTALLER_ACTIVE% == 0 (
     
     echo.
     echo.
-    echo Maya Packages Uninstalled
+    echo DCC Environments Uninstalled
     echo.
     pause
     exit

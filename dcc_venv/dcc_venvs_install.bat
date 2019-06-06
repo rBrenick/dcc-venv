@@ -14,6 +14,10 @@ FOR /D %%G in (dcc_venv\*) do (
     )
 )
 
+echo.
+echo.
+echo DCC Environments Installed
+echo.
 
 PAUSE
 EXIT
@@ -52,9 +56,8 @@ echo f | xcopy dcc_venv\_python_\dcc_startup.py %VENV_FOLDER%\Lib\site-packages\
 
 (echo start cmd /k call %VENV_FOLDER%/Scripts/activate.bat)>venv_activate__%DCC%.bat
 
-:: final message ###########################################################################################
 
-echo.
+:: final message ###################################################################
 echo.
 echo %DCC% Packages Installed
 echo.
