@@ -23,7 +23,7 @@ pip
 
 ## How the configs work
 
-Each DCC folder contains
+Each folder in dcc_venv contains
 ```
 requirements.txt
 venv_install.bat
@@ -31,6 +31,7 @@ venv_uninstall.bat
 ```
 
 On install the *requirements.txt* will be added to the virtual environment
+
 The *venv_install.bat* will then run to figure out how to add the site-packages to the DCC on startup.
 
 
