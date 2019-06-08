@@ -21,8 +21,7 @@ On DCC startup it will add the venv site-packages folder to the DCC's sys.path
 
 ## Requires:
 ```
-Python 3.3 or later
-pip
+Python 3.3 or later (you can use install_python.ps1 to setup an install)
 ```
 
 
