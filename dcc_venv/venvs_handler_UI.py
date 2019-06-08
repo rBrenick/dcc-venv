@@ -46,7 +46,7 @@ class VenvHandler(ttk.Frame):
         uninstall_button = ttk.Button(self, text="Uninstall", command=lambda: self.call_command("uninstall"))
         uninstall_button.pack(side=tkinter.LEFT)
         
-        upgrade_button = ttk.Button(self, text="Update", command=lambda: self.call_command("update"))
+        upgrade_button = ttk.Button(self, text="Get Latest Packages", command=lambda: self.call_command("update"))
         upgrade_button.pack(side=tkinter.RIGHT, padx=5, pady=5)
 
     def get_active_dccs(self):
@@ -69,7 +69,7 @@ class VenvHandler(ttk.Frame):
 def main():
 
     root = tkinter.Tk()
-    root.geometry("300x200+300+300")
+    # root.geometry("300x300+300+300")
     app = VenvHandler()
     root.mainloop()
 
