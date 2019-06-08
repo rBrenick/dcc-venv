@@ -38,7 +38,7 @@ On install the *requirements.txt* will be added to the virtual environment
 The *install* method in *venv_handler.py* will then run to figure out how to add the site-packages to the DCC on startup.
 
 
-## What is "Setup Environment (Tool Dev)"
+## What does the "Tool Developer" checkbox do?
 
-When running Setup Environment (Tool Dev), all the packages in requirements.txt below the **# DEV** comment will be pip installed -editable.
+When running Install as "Tool Developer", all the packages in requirements.txt below the **# DEV** comment will be pip installed -editable.
 
