@@ -27,16 +27,15 @@ Python 3.3 or later (you can use install_python.ps1 to setup an install)
 
 ## How the configs work
 
-Each folder in dcc_venv contains
+Each *config_* folder in [dcc_venv](https://github.com/rBrenick/dcc-venv/tree/master/dcc_venv) contains
 ```
 requirements.txt
-venv_install.bat
-venv_uninstall.bat
+venv_handler.py
 ```
 
 On install the *requirements.txt* will be added to the virtual environment
 
-The *venv_install.bat* will then run to figure out how to add the site-packages to the DCC on startup.
+The *install* method in *venv_handler.py* will then run to figure out how to add the site-packages to the DCC on startup.
 
 
 ## What is "Setup Environment (Tool Dev)"
