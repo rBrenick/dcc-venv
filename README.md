@@ -1,9 +1,14 @@
 # dcc-venv
 Python virtual environment manager for Digital Content Creation software
 
-This is a collection of .bat scripts that will setup a virtual environment for all the DCC configs that can be found in the [dcc_venv](https://github.com/rBrenick/dcc-venv/tree/master/dcc_venv) folder.
+This is a collection of .py scripts that will setup a virtual environment for all the DCC configs that can be found in the [dcc_venv](https://github.com/rBrenick/dcc-venv/tree/master/dcc_venv) folder.
 
 ![tool header image](docs/header_image.png)
+
+## Latest Update
+
+Now in python and with a UI.
+
 
 ## Currently supported DCCs:
 ```
