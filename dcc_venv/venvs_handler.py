@@ -11,7 +11,7 @@ log = logging.getLogger(" dcc-venv  ")
 
 import requirements_handler as reqhand
 
-# VENV_ROOT_FOLDER = os.path.join(os.path.expanduser('~'), "dcc-venvs")
+# VENV_ROOT_FOLDER = os.path.join(os.path.expanduser('~'), ".dcc-venvs")
 VENV_ROOT_FOLDER = os.path.join(os.path.abspath(os.path.dirname(os.path.dirname(__file__))), ".venvs")
 CONFIGS_FOLDER = os.path.abspath(os.path.dirname(__file__))
 CONFIG_PREFIX = "config_"

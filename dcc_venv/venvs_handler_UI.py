@@ -62,7 +62,7 @@ class VenvHandler(ttk.Frame):
             return
         
         is_dev = str(self.dev_check.get() is not 0)
-        print(is_dev)
+        
         subprocess.Popen(['python', venvs_handler.__file__, command_type, "-dev", is_dev, "-dccs", *dccs])
     
 
