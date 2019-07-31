@@ -96,7 +96,7 @@ def install_venv(target_configs=(), developer=False):
         
         
         
-        log.info("Installing startup egg link script {}".format(dcc))     
+        log.info("Installing startup egg link script - {}".format(dcc))     
         startup_path = os.path.join(site_packages_path, os.path.basename(DCC_STARTUP_SCRIPT))
         shutil.copy(DCC_STARTUP_SCRIPT, startup_path)
         
@@ -109,7 +109,7 @@ def install_venv(target_configs=(), developer=False):
             os.remove(req_dev_path)
             
         
-    sys.stdout.write("\ndcc-venv install complete \n\n".format("-"*100))
+    sys.stdout.write("\ndcc-venv install complete for: {}\n\n".format(", ".join(target_configs), "-"*100))
 
 
 def update_venv(target_configs=(), developer=False):
@@ -184,7 +184,7 @@ def uninstall_venv(target_configs=(), developer=False):
         sys.stdout.write("\n{} \n\n".format("-"*100))
     
     
-    sys.stdout.write("\ndcc-venv uninstall complete \n\n".format("-"*100))
+    sys.stdout.write("\ndcc-venv uninstall complete for: {}\n\n".format(", ".join(target_configs), "-"*100))
     
     if len(os.listdir(VENV_ROOT_FOLDER)) == 0: # remove folder if empty
         os.rmdir(VENV_ROOT_FOLDER)
@@ -228,7 +228,6 @@ def str2bool(v):
 
         
 if __name__ == "__main__":
-    
     os.system("cls")
     log.info("#"*85)
     log.info("dcc_venvs setup")
@@ -248,6 +247,7 @@ if __name__ == "__main__":
     
     func = func_map.get(args.type)
     func(args.dccs, args.dev)
+    os.system("pause")
     
 
 

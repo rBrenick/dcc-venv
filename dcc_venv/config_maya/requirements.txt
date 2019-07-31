@@ -1,4 +1,7 @@
 Qt.py
+scandir
 
 # DEV
-git+https://github.com/rBrenick/TestRepo
+# git+https://github.com/rBrenick/TestRepo
+# git+https://github.com/rBrenick/script-tree
+# git+https://github.com/rBrenick/pose-blender

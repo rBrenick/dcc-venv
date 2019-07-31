@@ -1,3 +1,3 @@
 @ECHO off
 ECHO Starting Tool...
-pythonw dcc_venv/venvs_handler_UI.py
+start pythonw dcc_venv/venvs_handler_UI.py
