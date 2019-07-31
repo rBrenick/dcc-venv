@@ -14,6 +14,7 @@ Now in python and with a UI.
 ```
 Maya
 Motionbuilder
+Blender
 ```
 
 On DCC startup it will add the venv site-packages folder to the DCC's sys.path
